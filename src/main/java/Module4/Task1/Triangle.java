@@ -1,8 +1,5 @@
 package Module4.Task1;
 
-/**
- *
- */
 public class Triangle extends Figure {
 
     private double side;

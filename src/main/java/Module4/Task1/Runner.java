@@ -4,7 +4,7 @@ package Module4.Task1;
 /**
  * Создать класс, вычисляющий площадь простых геометрических фигур: треугольника, прямоугольника и круга
  */
-public class Test {
+public class Runner {
   public static void main(String[] args) {
       Triangle triangle = new Triangle();
       triangle.setSide(3);

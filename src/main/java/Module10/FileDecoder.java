@@ -4,7 +4,7 @@ import Module9.CaesarEncrypter;
 import java.io.*;
 import java.util.List;
 
-public class Reader {
+public class FileDecoder {
     public static void readFile(String readFile, String writeFile, int step, List<Character> lib) throws Exception {
         try (FileReader inputFile = new FileReader(new File(readFile));
              FileWriter outputFileDecrypted = new FileWriter(new File(writeFile))) {

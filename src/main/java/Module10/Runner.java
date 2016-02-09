@@ -9,9 +9,9 @@ public class Runner {
         List<Character> lib = LibraryCreator.createLib(); //create lib for encoding/decoding
         final int STEP = 5; // constant for encoding/decoding
         //to let user enter name of files to encrypt/decrypt please use IOUtil class
-        Writer.writeFile("src/main/java/Module10/files/txt.txt",
+        FileEncoder.writeFile("src/main/java/Module10/files/txt.txt",
                 "src/main/java/Module10/files/EncryptedFile.txt", STEP, lib); //encode given file with "lib"
-        Reader.readFile("src/main/java/Module10/files/EncryptedFile.txt",
+        FileDecoder.readFile("src/main/java/Module10/files/EncryptedFile.txt",
                 "src/main/java/Module10/files/Decrypted.txt", STEP, lib); //decode given file with "lib"
         IOUtil.printToConsole("Operation ended successful: "+CompareFiles.compare("src/main/java/Module10/files/txt.txt",
                 "src/main/java/Module10/files/Decrypted.txt"));

@@ -6,7 +6,7 @@ import java.io.*;
 import java.util.List;
 
 
-public class Writer {
+public class FileEncoder {
     public static void writeFile(String readFile, String writeFile, int step, List<Character> lib) throws Exception {
         try (FileReader inputFile = new FileReader(new File(readFile));
              FileWriter outputFileEncrypted = new FileWriter(new File(writeFile))) {

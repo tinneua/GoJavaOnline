@@ -1,7 +1,7 @@
 package Module4.Task3;
 
 
-public class Test {
+public class DistanceCalculator {
     public static void main(String[] args) {
         CalculateDistance calc = new CalculateDistance();
         calc.setX(2.5,3.0);
