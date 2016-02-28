@@ -1,6 +1,8 @@
 package Module8;
 
-public class Guitar {
+
+
+public class Guitar implements Comparable<Guitar> {
     String name;
     double price;
     int yearOfProduction;
@@ -29,5 +31,10 @@ public class Guitar {
     @Override
     public String toString() {
         return name + "\t" + price + "\t\t" + yearOfProduction + "\t\t";
+    }
+
+    @Override
+    public int compareTo(Guitar o) {
+        return Comparators.YEAR.compare(this, o);
     }
 }

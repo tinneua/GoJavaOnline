@@ -30,13 +30,13 @@ public class Runner {
             String name = aMusicShop.getName();
             aMusicShop.setName(CaesarEncrypter.encrypt(name, step, lib));
         }
-        CollectionPrinter.printInfo(musicShop);
+        CollectionPrinter.printList(musicShop);
 
         System.out.println("\nDecrypted music shop:"+'\n');
         for (Guitar aMusicShop : musicShop) {
             String name = aMusicShop.getName();
             aMusicShop.setName(CaesarEncrypter.decrypt(name, step, lib));
         }
-        CollectionPrinter.printInfo(musicShop);
+        CollectionPrinter.printList(musicShop);
     }
 }
