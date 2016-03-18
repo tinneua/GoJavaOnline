@@ -1,0 +1,5 @@
+  Type of array             add             get          remove        contains        populate    iterator.add iterator.remove 
+      ArrayList            0.15             0.0            0.03            0.48            2.59            0.07            0.06 
+     LinkedList            0.21            0.21             0.2            0.57           12.86             0.0             0.0 
+        HashSet             0.0             0.0             0.0             0.0            7.26             0.0             0.0 
+        TreeSet             0.0             0.0             0.0             0.0           36.82             0.0             0.0 
