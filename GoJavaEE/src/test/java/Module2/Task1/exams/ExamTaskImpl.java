@@ -1,9 +1,9 @@
-package Module1.Task2.exams;
+package Module2.Task1.exams;
 
-import Module1.Task2.MainClass.Task;
+import Module2.Task1.MainClass;
 
 
-public class ExamTaskImpl implements Task<Student> {
+public class ExamTaskImpl implements MainClass.Task<Student> {
     public ExamTaskImpl(Student student) {
         this.student = student;
     }

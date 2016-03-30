@@ -1,4 +1,4 @@
-package Module1.Task2.exams;
+package Module2.Task1.exams;
 
 
 public class Linguist extends Student {

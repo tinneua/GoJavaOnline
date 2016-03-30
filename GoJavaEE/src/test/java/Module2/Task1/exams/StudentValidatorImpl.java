@@ -1,11 +1,11 @@
-package Module1.Task2.exams;
+package Module2.Task1.exams;
 
 
-import Module1.Task2.MainClass.Validator;
+import Module2.Task1.MainClass;
 
 import java.util.Objects;
 
-public class StudentValidatorImpl implements Validator<Student> {
+public class StudentValidatorImpl implements MainClass.Validator<Student> {
 
     @Override
     public boolean isValid(Student result) {
