@@ -1,4 +1,4 @@
-package Module3;
+package Module3p1;
 
 public class SemaphoreImpl implements Semaphore {
     private volatile int permits;
