@@ -4,14 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.*;
 
-/**
- * Используя Phaser и Executors реализовать класс, который бы считал сумму квадратов элементов массива параллельно в заданном количестве потоков
- * interface SquareSum {
- * long getSquareSum(int[] values, int numberOfThreads);
- * }
- * Идея в том, чтобы разбить массив на равные части и найти сумму квадратов в каждом кусочке в отдельном потоке параллельно.
- * Используя Phaser, дождаться результатов всех вычислений и сложить их, получив конечный результат.
- */
+
 public class SquareSumImp implements SquareSum {
     long finalSum;
     List<Callable<Long>> tasks = new ArrayList<>();
@@ -68,7 +61,7 @@ public class SquareSumImp implements SquareSum {
 
         @Override
         public Long call() throws Exception {
-            phaser.register();
+            //phaser.register();
             int taskResult = 0;
             for (int value : values) {
                 taskResult += value * value;

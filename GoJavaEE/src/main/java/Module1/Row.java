@@ -1,4 +1,4 @@
-package Module1.Task1;
+package Module1;
 
 public class Row {
 

@@ -1,4 +1,4 @@
-package Module2.Task1.Exceptions;
+package Module2.Exceptions;
 
 
 public class ExecutionNotCalledException extends RuntimeException {

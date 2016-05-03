@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="semaphore" basedir=".">
+    <property name="src" location="src"/>
+    <property name="build" location="build"/>
+    <property name="dist" location="dist"/>
+
+
+    <target name="init" description="init project structure">
+        <mkdir dir="${build}"/>
+        <mkdir dir="${dist}"/>
+    </target>
+
+    <target name="compile" depends="init">
+        <javac srcdir="${src}" destdir="${build}" source="1.8" target="1.8"/>
+    </target>
+
+    <target name="jar">
+        <jar destfile="${dist}/Module1.jar">
+            <fileset dir="${build}"/>
+            <manifest>
+                <attribute name="Main-Class" value="Module1.CollectionAnalyzer"/>
+            </manifest>
+        </jar>
+
+        <jar destfile="${dist}/Module2.jar">
+            <fileset dir="${build}"/>
+            <manifest>
+                <attribute name="Main-Class" value="Module2.MainClass"/>
+            </manifest>
+        </jar>
+
+        <jar destfile="${dist}/Module3-1.jar">
+            <fileset dir="${build}"/>
+            <manifest>
+                <attribute name="Main-Class" value="Module3p1.SemaphoreTest"/>
+            </manifest>
+        </jar>
+
+
+        <jar destfile="${dist}/Module3-2.jar">
+            <fileset dir="${build}"/>
+            <manifest>
+                <attribute name="Main-Class" value="Module3p2.SquareSumImp"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="clean">
+        <delete dir="${build}"/>
+        <delete dir="${dist}"/>
+
+    </target>
+</project>

@@ -1,4 +1,4 @@
-package Module2.Task1.exams;
+package Module2.exams;
 
 public abstract class Student {
     private String name;

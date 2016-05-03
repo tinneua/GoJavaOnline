@@ -1,7 +1,7 @@
-package Module2.Task1.exams;
+package Module2.exams;
 
 
-import Module2.Task1.MainClass;
+import Module2.MainClass;
 
 import java.util.Objects;
 

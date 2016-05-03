@@ -1,6 +1,6 @@
-package Module2.Task1;
+package Module2;
 
-import Module2.Task1.exams.*;
+import Module2.exams.*;
 import org.junit.Test;
 
 

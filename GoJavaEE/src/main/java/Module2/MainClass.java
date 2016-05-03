@@ -1,17 +1,7 @@
-package Module2.Task1;
+package Module2;
 
 import java.util.List;
-/**
- * 1 Переписать интерфейс Task так что бы он был типизирован по результату (значению возращаемуому методом getResult()).
 
- 2 Переписать интерфейс Validator так что бы он был типизирован по принемаемому значению isValid(Object result);
-
- 3 Переписать интерфейс Executor так чтоб он был типизирован в соответсвии с с типизацией Task и Validator
-
- 4 Импелементирвать интерфейс Executor
-
- 5 Написать к нему тесты.
- */
 
 public class MainClass {
     public static void main(String[] args) {
